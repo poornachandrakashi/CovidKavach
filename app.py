@@ -37,19 +37,19 @@ def fetch_oxy():
     # return final[0]
     return render_template("oxy.html",final = final)
 
-# @app.route('/fetch_vaccine')
-# def fetch_oxy():
-#     tweets = tweepy.Cursor(api.search,
-#               q=search_words,
-#               lang="en",
-#               since=date_since).items(15)
-#     data = []
-#     for tweet in tweets:
-#         data.append(tweet.text)
+@app.route('/fetch_vaccine')
+def fetch_vaccine():
+    tweets = tweepy.Cursor(api.search,
+              q="Covid Vaccine",
+              lang="en",
+              since=date_since).items(15)
+    data = []
+    for tweet in tweets:
+        data.append(tweet.text)
 
-#     final = data
-#     # return final[0]
-#     return render_template("oxy.html",final = final)
+    final = data
+    # return final[0]
+    return render_template("vacc.html",final = final)
 
 # @app.route('/fetch_beds')
 # def fetch_oxy():
