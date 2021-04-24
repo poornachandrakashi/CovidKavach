@@ -57,7 +57,9 @@ def fetch():
         return json.dump(prevData,mt)
         
 
-    return json.dump(prevData,mt)
+    # return json.dump(prevData,mt)
+    return "Success"
+
 
 @app.route('/display')
 def display():
@@ -66,13 +68,16 @@ def display():
 
     datas = data['data']
     for i in range(10):
-        data_final = datas[i]
-        new =[]
-        new.append(data_final)
-    return new
+        new = datas[i]
+    #     data_final = datas[i]
+        news =[]
+        news.append(new)
+
+    return str(news)
 
     # return "error"
 
+    
 
 if __name__=="__main__":
     app.run(debug=True)
