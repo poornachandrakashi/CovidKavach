@@ -54,22 +54,18 @@ def fetch():
         prevData = database
     with open(filename,'w',encoding="UTF-8") as mt:
         #mt.write(json.dumps(tweet)+'\n')
-        return json.dump(prevData,mt)
-        
+         json.dump(prevData,mt)
+         return prevData
 
-    return json.dump(prevData,mt)
+    return "hello"
 
 @app.route('/display')
 def display():
     final = open('covidnew.json')
     data = json.load(final)
 
-    datas = data['data']
-    for i in range(10):
-        data_final = datas[i]
-        new =[]
-        new.append(data_final)
-    return new
+  
+    return data
 
     # return "error"
 
