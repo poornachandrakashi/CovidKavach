@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_home"
+    app:startDestination="@id/feed">
+
+    <fragment
+        android:id="@+id/feed"
+        android:name="com.app.covidhelp.fragments.FeedFragment"
+        android:label="FeedFragment" />
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.app.covidhelp.fragments.FragmentProfile"
+        android:label="FragmentProfile" />
+    <activity
+        android:id="@+id/addFeedActivity"
+        android:name="com.app.covidhelp.activities.AddFeedActivity"
+        android:label="activity_add_feed"
+        tools:layout="@layout/activity_add_feed" />
+
+</navigation>

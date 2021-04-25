@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">CovidHelp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="slide_1_title">Namaste !</string>
+    <string name="slide_1_desc">Welcome to the simplest Interaction Platform!</string>
+
+    <string name="slide_2_title">Send Anything</string>
+    <string name="slide_2_desc">Interact with family and friends without any threat on Privacy !</string>
+
+    <string name="slide_3_title">Contextual Chat</string>
+    <string name="slide_3_desc">Keep your Time spent on Social Media to the least with smart replies</string>
+
+    <string name="slide_4_title">Discover</string>
+    <string name="slide_4_desc">Engagement from a wide  range of curated surprise content from us as well as your friends</string>
+
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again">Play Again</string>
+    </resources>
