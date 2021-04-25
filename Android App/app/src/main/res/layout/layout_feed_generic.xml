@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_round_shape"
+
+    app:cardElevation="8dp"
+    app:cardUseCompatPadding="true">
+
+    <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           >
+
+            <TableRow android:weightSum="2"  android:visibility="gone">
+
+                <TextView
+
+                    style="@style/header"
+                    android:text="Name" />
+
+                <TextView
+                    android:id="@+id/name"
+                    style="@style/tv_subHeader"
+                    android:text="Name" />
+
+            </TableRow>
+
+            <TableRow android:weightSum="2">
+
+                <TextView
+
+                    style="@style/header"
+                    android:text="Description" />
+
+                <TextView
+                    android:id="@+id/description"
+                    style="@style/tv_subHeader"
+                    android:text="Name" />
+
+            </TableRow>
+
+            <TableRow android:weightSum="2">
+
+                <TextView
+
+                    style="@style/header"
+                    android:text="Contact" />
+
+                <TextView
+                    android:id="@+id/contact"
+                    style="@style/tv_subHeader"
+                    android:text="Name" />
+
+            </TableRow>
+
+            <TableRow android:weightSum="2">
+
+                <TextView
+
+                    style="@style/header"
+                    android:text="Trust" />
+
+                <TextView
+                    android:id="@+id/trust"
+                    style="@style/tv_subHeader"
+                    android:text="Name" />
+
+            </TableRow>
+
+
+        </TableLayout>
+
+        <TextView
+            style="@style/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Tags" />
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipgroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        </com.google.android.material.chip.ChipGroup>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/upvote"
+                    style="@style/tv_subHeader"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="UpVote" />
+
+                <Button
+                    android:id="@+id/downvote"
+                    style="@style/tv_subHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="DownVote" />
+
+            </TableRow>
+
+        </TableLayout>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</com.google.android.material.card.MaterialCardView>
