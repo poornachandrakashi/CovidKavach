@@ -1,6 +1,7 @@
 import tweepy
 import pandas as pd
-from flask import Flask,render_template
+from flask import Flask,render_template,Response
+import json
 
 app = Flask(__name__)
 
@@ -64,6 +65,20 @@ def fetch_beds():
     final = data
     # return final[0]
     return render_template("beds.html",final = final)
+
+@app.route('/fetch_feeds')
+def fetch_feeds():
+    tweets = tweepy.Cursor(api.search,
+              q="hospital beds",
+              lang="en",
+              since=date_since).items(15)
+    data = []
+    for tweet in tweets:
+        data.append(tweet.text)
+
+    final = data
+    # return final[0]
+    return Response(json.dumps(final),  mimetype='application/json')
 
 # @app.route('/fetch_pm')
 # def f
