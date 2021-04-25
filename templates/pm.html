@@ -71,7 +71,7 @@
 				<div id="features-wrapper">
 					<div class="container">
 						<div class="row">
-                            {% for i in final %}
+                            <!-- {% for tweet,likes,time in df %} -->
 							<div class="col-4 col-12-medium">
 
 								<!-- Box -->
@@ -80,14 +80,14 @@
 										<div class="inner">
 											<!-- <header> -->
 												<!-- <h2>Looking for Oxygen Cylinders</h2> -->
-												<p>{{i}}</p>
+												<p>{{df[0]}}</p>
 											<!-- </header> -->
 											<!-- <a href="/fetch_oxy"><button><p>Click here</p></button></a> -->
 										</div>
 									</section>
 
 							</div>
-							{% endfor %}
+							<!-- {% endfor %} -->
 							
 						</div>
 					</div>
@@ -221,7 +221,7 @@
 			<script src="static/assets/js/jquery.min.js"></script>
 			<script src="static/assets/js/jquery.dropotron.min.js"></script>
 			<script src="static/assets/js/browser.min.js"></script>
-			<script src="static/assets/js/breakpoints.min.js"></script>
+			<script src="static/assets/js/brstatic/eakpoints.min.js"></script>
 			<script src="static/assets/js/util.js"></script>
 			<script src="static/assets/js/main.js"></script>
 
